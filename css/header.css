@@ -27,3 +27,18 @@ header .nav {
     padding: 5px 10px;
     background: linear-gradient(101.67deg,#48cce0 7.24%,#505add 34.12%,#be40c0 62.93%,#fba82b 92.22%);
 }
+
+.border-color {
+    display: flex;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(101.67deg,#48cce0 7.24%,#505add 34.12%,#be40c0 62.93%,#fba82b 92.22%);
+    align-items: center;
+    justify-content: center;
+}
+
+.rounded-circle {
+    border: 2px solid white;
+    background: linear-gradient(101.67deg,#48cce0 7.24%,#505add 34.12%,#be40c0 62.93%,#fba82b 92.22%);
+}
