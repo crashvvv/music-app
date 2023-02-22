@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/album.css">
+    <script src="js/data.js" defer></script>
+    <script src="js/index.js" defer></script>
 
     <title>Музыка</title>
 </head>
@@ -16,7 +18,7 @@
     <header class="p-3 mb-3 border-bottom container borrder-dark">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="logo-text d-flex align-items-center me-3 mb-2 mb-lg-0 text-dark text-decoration-none">
+        <a href="/" class="logo-text d-flex align-items-center me-3 mb-2 mb-lg-0 text-dark text-decoration-none me-lg-4">
           Музыка
         </a>
 
@@ -50,87 +52,7 @@
   </header>
   <main class="container">
     <h1 class="my-5">Фоновая музыка</h1>
-    <div class="row albums">
-        <div class="col-2">
-            <a href="Blues.html" class="text-decoration-none">
-                <div class="card">
-                    <img src="assets/Collection_Blues.png" alt="Blues" class="card-img-top">
-                    <div class="card-body">
-                        <p class="card-text">Блюз</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-2">
-          <a href="Classical.html" class="text-decoration-none">
-            <div class="card">
-                <img src="assets/Collection_Classical.png" alt="Classical" class="card-img-top">
-                <div class="card-body">
-                    <p class="card-text">Классическая</p>
-                </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-2">
-          <a href="Electronic.html" class="text-decoration-none">
-            <div class="card">
-                <img src="assets/Collection_Electronic.png" alt="Electronic" class="card-img-top">
-                <div class="card-body">
-                    <p class="card-text">Электронная</p>
-                </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-2">
-          <a href="Jazz.html" class="text-decoration-none">
-          <div class="card">
-              <img src="assets/Collection_Jazz.png" alt="Jazz" class="card-img-top">
-              <div class="card-body">
-                  <p class="card-text">Джаз</p>
-              </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-2">
-        <a href="Metal.html" class="text-decoration-none">
-        <div class="card">
-            <img src="assets/Collection_Metal.png" alt="Metal" class="card-img-top">
-            <div class="card-body">
-                <p class="card-text">Метал</p>
-            </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-2">
-      <a href="Pop.html" class="text-decoration-none">
-      <div class="card">
-          <img src="assets/Collection_Pop.png" alt="Pop" class="card-img-top">
-          <div class="card-body">
-              <p class="card-text">Поп</p>
-          </div>
-      </div>
-    </a>
-  </div>
-<div class="col-2">
-  <a href="Rap.html" class="text-decoration-none">
-  <div class="card">
-      <img src="assets/Collection_Rap.png" alt="Rap" class="card-img-top">
-      <div class="card-body">
-          <p class="card-text">Рэп</p>
-      </div>
-  </div>
-</a>
-</div>
-<div class="col-2">
-  <a href="Add.html" class="text-decoration-none">
-  <div class="card">
-      <img src="assets/plus.svg" alt="Add" class="card-img-top">
-      <div class="card-body">
-          <p class="card-text">Добавить предпочтения</p>
-      </div>
-  </div>
-</a>
-</div>
+    <div class="row albums row-cols-2 row-cols-md-4 gy-2">
     </div>
   </main>
   <footer class="py-3 my-4">
