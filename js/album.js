@@ -15,12 +15,12 @@ if (!album) {
     <div class="card mb-3">
         <div class="row">
             <div class="col-4">
-                <img src="${albums.img}" alt="" class="img-fluid round-start">
+                <img src="${album.img}" alt="" class="img-fluid round-start">
             </div>
             <div class="col-8">
                 <div class="card-body">
-                    <h5 class="card-title">${albums.title}</h5>
-                    <p class="card-text">${albums.description}</p>
+                    <h5 class="card-title">${album.title}</h5>
+                    <p class="card-text">${album.description}</p>
                     <p class="card-text"><small class="text-muted">Сборник выпущен в ${albums.year} году</small></p>
                 </div>
             </div>
@@ -41,5 +41,5 @@ if (!album) {
             <div class="ms-auto"><img src="assets/multimedia_play.svg" alt="" class="me-3" height="30px"> - ${track.time}</div>
         </li>
         `;
-    };
+    }
 }

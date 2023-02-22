@@ -8,17 +8,17 @@ let albums = [
             {
                 title: 'Трек 1',
                 author: `Автор`,
-                time: `время`
+                time: `3:42`
             },
             {
                 title: 'Трек 2',
                 author: `Автор`,
-                time: `время`
+                time: `2:58`
             },
             {
                 title: 'Трек 3',
                 author: `Автор`,
-                time: `Время`
+                time: `4:01`
             },
         ]
     },
