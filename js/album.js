@@ -21,7 +21,7 @@ if (!album) {
                 <div class="card-body">
                     <h5 class="card-title">${album.title}</h5>
                     <p class="card-text">${album.description}</p>
-                    <p class="card-text"><small class="text-muted">Сборник выпущен в ${albums.year} году</small></p>
+                    <p class="card-text"><small class="text-muted">Сборник выпущен в ${album.year} году</small></p>
                 </div>
             </div>
         </div>
