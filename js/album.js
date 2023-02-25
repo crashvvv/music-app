@@ -36,7 +36,7 @@ if (!album) {
         playlist.innerHTML += `
         <li class="track list-group-item d-flex align-items-center">
             <img src="assets/play.svg" alt="" class="img-pause me-3" height="30px">
-            <img src="assets/music.svg" alt="" class="img-play me-3 d-none" height="30px">
+            <img src="assets/music.svg" alt="" class="img-play me-3 d-none css-selector" height="30px">
             <div>
                 <div>${track.title}</div>
                 <div class="text-secondary">${track.author}</div>

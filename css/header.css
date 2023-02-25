@@ -43,3 +43,28 @@ header .nav {
     border: 2px solid white;
     background: linear-gradient(101.67deg,#48cce0 7.24%,#505add 34.12%,#be40c0 62.93%,#fba82b 92.22%);
 }
+
+.css-selector {
+    background: linear-gradient(91deg, #48cce0, #505add, #be40c0, #fba82b);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
