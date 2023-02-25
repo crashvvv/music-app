@@ -8,17 +8,23 @@ let albums = [
             {
                 title: 'Трек 1',
                 author: `Автор`,
-                time: `3:42`
+                time: `3:42`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 2',
                 author: `Автор`,
-                time: `2:58`
+                time: `2:58`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 3',
                 author: `Автор`,
-                time: `4:01`
+                time: `4:01`,
+                src: `music/`,
+                isPlaying: false
             },
         ]
     },
@@ -31,17 +37,23 @@ let albums = [
             {
                 title: 'Трек 1',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 2',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 3',
                 author: `Автор`,
-                time: `Время`
+                time: `Время`,
+                src: `music/`,
+                isPlaying: false
             },
         ]
     },
@@ -54,17 +66,23 @@ let albums = [
             {
                 title: 'Трек 1',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 2',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 3',
                 author: `Автор`,
-                time: `Время`
+                time: `Время`,
+                src: `music/`,
+                isPlaying: false
             },
         ]
     },
@@ -77,17 +95,23 @@ let albums = [
             {
                 title: 'Трек 1',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 2',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 3',
                 author: `Автор`,
-                time: `Время`
+                time: `Время`,
+                src: `music/`,
+                isPlaying: false
             },
         ]
     },
@@ -100,17 +124,23 @@ let albums = [
             {
                 title: 'Трек 1',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 2',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 3',
                 author: `Автор`,
-                time: `Время`
+                time: `Время`,
+                src: `music/`,
+                isPlaying: false
             },
         ]
     },
@@ -123,17 +153,23 @@ let albums = [
             {
                 title: 'Трек 1',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 2',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 3',
                 author: `Автор`,
-                time: `Время`
+                time: `Время`,
+                src: `music/`,
+                isPlaying: false
             },
         ]
     },
@@ -146,17 +182,23 @@ let albums = [
             {
                 title: 'Трек 1',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 2',
                 author: `Автор`,
-                time: `время`
+                time: `время`,
+                src: `music/`,
+                isPlaying: false
             },
             {
                 title: 'Трек 3',
                 author: `Автор`,
-                time: `Время`
+                time: `Время`,
+                src: `music/`,
+                isPlaying: false
             },
         ]
     },

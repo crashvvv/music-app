@@ -28,18 +28,52 @@ if (!album) {
     </div>
     `;
 
+    let playlist = document.querySelector(`.playlist`);
+
     let tracks = album.tracks;
-    for (let i = 0; i < tracks.length; i++) {
-        let track = tracks[i];
+    for (let j = 0; j < tracks.length; j++) {
+        let track = tracks[j];
         playlist.innerHTML += `
-        <li class="list-group-item d-flex align-items-center">
+        <li class="track list-group-item d-flex align-items-center">
+            <img src="assets/play.svg" alt="" class="img-pause me-3" height="30px">
             <img src="assets/play.svg" alt="" class="me-3" height="30px">
             <div>
                 <div>${track.title}</div>
                 <div>${track.author}</div>
             </div>
             <div class="ms-auto"><img src="assets/multimedia_play.svg" alt="" class="me-3" height="30px"> - ${track.time}</div>
+            <audio class="audio" src="${track.src}"></audio>
         </li>
         `;
     }
+    function setupAudio() {
+        // Найди коллекцию с треками
+        let trackNodes = document.querySelectorAll(`.track`); 
+        let tracks = album.tracks;
+        for (let i = 0; i < trackNodes.length; i++) { 
+            // Один элемент
+            let node = trackNodes[i];   
+            // Тег аудио внутри этого элемента
+            let audio = node.querySelector(`.audio`); 
+            let track = tracks[i];
+            // продолжи самостоятельно
+        
+            node.addEventListener(`click`, function () {
+                // Если трек сейчас играет...
+                if (track.isPlaying) {
+                    track.isPlaying = false;
+                    // Поставить на паузу
+                    audio.pause();
+    
+                // Если трек сейчас не играет...
+                } else {
+                    track.isPlaying = true;
+                    // Включить проигрывание
+                    audio.play();
+                }
+            });
+        }
+    }
+
+    setupAudio();
 }
