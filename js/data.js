@@ -6,24 +6,24 @@ let albums = [
         description: `Блюз является импровизационной формой музыкального жанра, где в композициях зачастую используют только основной опорный «каркас», который обыгрывают солирующие инструменты`,
         tracks: [
             {
-                title: 'Трек 1',
-                author: `Автор`,
+                title: 'You Never Can Tell',
+                author: `Chuck Berry`,
                 time: `3:42`,
-                src: `music/`,
+                src: `music/Blues_Chuck_Berry-You_Never_Can_Tell.mp3`,
                 isPlaying: false
             },
             {
-                title: 'Трек 2',
-                author: `Автор`,
+                title: 'What A Wonderful World',
+                author: `Louis Armstrong`,
                 time: `2:58`,
-                src: `music/`,
+                src: `music/Blues_Louis_Armstrong-What_A_Wonderful_World.mp3`,
                 isPlaying: false
             },
             {
-                title: 'Трек 3',
-                author: `Автор`,
+                title: 'Мой друг',
+                author: `Машина времени`,
                 time: `4:01`,
-                src: `music/`,
+                src: `music/Blues_Mashina_vremeni-Mojj_drug.mp3`,
                 isPlaying: false
             },
         ]
@@ -31,28 +31,28 @@ let albums = [
     {
         title: `Классическая`,
         img: `assets/Collection_Classical.png`,
-        year: `2023`,
+        year: `2006`,
         description: `Класси́ческая музыка (музыкальная классика) — образцовые музыкальные произведения, золотой фонд мировой музыкальной культуры`,
         tracks: [
             {
-                title: 'Трек 1',
-                author: `Автор`,
+                title: 'Playtime Live',
+                author: `Yanni Live`,
                 time: `время`,
-                src: `music/`,
+                src: `music/Classic_Yanni-Playtime_Live.mp3`,
                 isPlaying: false
             },
             {
-                title: 'Трек 2',
-                author: `Автор`,
+                title: 'The Concert Event',
+                author: `Yanni Live`,
                 time: `время`,
-                src: `music/`,
+                src: `music/Classic_Yanni-The_Concert_Event.mp3`,
                 isPlaying: false
             },
             {
-                title: 'Трек 3',
-                author: `Автор`,
+                title: 'to Imagination',
+                author: `Yanni Live`,
                 time: `Время`,
-                src: `music/`,
+                src: `music/Classic_Yanni-to_Imagination.mp3`,
                 isPlaying: false
             },
         ]
@@ -64,53 +64,24 @@ let albums = [
         description: `Электро́нная му́зыка — музыка, созданная с использованием электромузыкальных инструментов и электронных технологий`,
         tracks: [
             {
-                title: 'Трек 1',
-                author: `Автор`,
+                title: 'RAVE',
+                author: `Dxrk`,
                 time: `время`,
-                src: `music/`,
+                src: `music/Electro_Dxrk-RAVE.mp3`,
                 isPlaying: false
             },
             {
-                title: 'Трек 2',
-                author: `Автор`,
+                title: 'WAKE UP',
+                author: `Moondeity`,
                 time: `время`,
-                src: `music/`,
+                src: `music/Electro_Moondeity-WAKE_UP.mp3`,
                 isPlaying: false
             },
             {
-                title: 'Трек 3',
-                author: `Автор`,
+                title: 'KNIGHT',
+                author: `SHADXWBXRN`,
                 time: `Время`,
-                src: `music/`,
-                isPlaying: false
-            },
-        ]
-    },
-    {
-        title: `Джаз`,
-        img: `assets/Collection_Jazz.png`,
-        year: `2023`,
-        description: `Джаз — род музыкального искусства, сложившийся под влиянием африканских ритмов, европейской гармонии, с привлечением элементов афроамериканского и латиноамериканского фольклора.`,
-        tracks: [
-            {
-                title: 'Трек 1',
-                author: `Автор`,
-                time: `время`,
-                src: `music/`,
-                isPlaying: false
-            },
-            {
-                title: 'Трек 2',
-                author: `Автор`,
-                time: `время`,
-                src: `music/`,
-                isPlaying: false
-            },
-            {
-                title: 'Трек 3',
-                author: `Автор`,
-                time: `Время`,
-                src: `music/`,
+                src: `music/Electro_SHADXWBXRN-KNIGHT.mp3`,
                 isPlaying: false
             },
         ]
@@ -122,24 +93,24 @@ let albums = [
         description: `Мета́л или ме́тал — жанр рок-музыки, появившийся из хард-рока. Метал характеризуется «тяжёлыми» риффами электрогитар, искажённых эффектом дисторшн, затяжными гитарными соло и агрессивным ритмом.`,
         tracks: [
             {
-                title: 'Трек 1',
-                author: `Автор`,
+                title: 'Я свободен',
+                author: `Кипелов`,
                 time: `время`,
-                src: `music/`,
+                src: `music/Metal_Kipelov-YA_svoboden.mp3`,
                 isPlaying: false
             },
             {
-                title: 'Трек 2',
-                author: `Автор`,
+                title: 'Feuer frei',
+                author: `Rammstein`,
                 time: `время`,
-                src: `music/`,
+                src: `music/Metal_Rammstein-Feuer_frei.mp3`,
                 isPlaying: false
             },
             {
-                title: 'Трек 3',
-                author: `Автор`,
+                title: 'Ich will',
+                author: `Rammstein`,
                 time: `Время`,
-                src: `music/`,
+                src: `music/Metal_Rammstein-Ich_will.mp3`,
                 isPlaying: false
             },
         ]
@@ -151,53 +122,24 @@ let albums = [
         description: `Поп-му́зыка — область массовой культуры, охватывающая различные формы, жанры и стили развлекательной и прикладной музыки. Основные черты поп-музыки — простота инструментальной части, ритмичность, акцент на вокал.`,
         tracks: [
             {
-                title: 'Трек 1',
-                author: `Автор`,
+                title: 'Paradise',
+                author: `Meduza`,
                 time: `время`,
-                src: `music/`,
+                src: `music/Pop_Meduza-Paradise.mp3`,
                 isPlaying: false
             },
             {
-                title: 'Трек 2',
-                author: `Автор`,
+                title: 'In The Dark',
+                author: `Purple Disco Machine`,
                 time: `время`,
-                src: `music/`,
+                src: `music/Pop_Purple_Disco_Machine-In_The_Dark.mp3`,
                 isPlaying: false
             },
             {
-                title: 'Трек 3',
-                author: `Автор`,
+                title: 'Wont Forget You',
+                author: `Shouse`,
                 time: `Время`,
-                src: `music/`,
-                isPlaying: false
-            },
-        ]
-    },
-    {
-        title: `Рэп`,
-        img: `assets/Collection_Rap.png`,
-        year: `2023`,
-        description: `Рэп - музыкальная форма вокальной подачи, включающая в себя «рифму, ритмичную речь и уличный жаргон», которая исполняется или произносится нараспев различными способами, как правило, под фоновый бит или музыкальный аккомпанемен`,
-        tracks: [
-            {
-                title: 'Трек 1',
-                author: `Автор`,
-                time: `время`,
-                src: `music/`,
-                isPlaying: false
-            },
-            {
-                title: 'Трек 2',
-                author: `Автор`,
-                time: `время`,
-                src: `music/`,
-                isPlaying: false
-            },
-            {
-                title: 'Трек 3',
-                author: `Автор`,
-                time: `Время`,
-                src: `music/`,
+                src: `music/Pop_Shouse-Wont_Forget_You.mp3`,
                 isPlaying: false
             },
         ]
