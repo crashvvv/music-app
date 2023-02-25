@@ -41,7 +41,10 @@ if (!album) {
                 <div>${track.title}</div>
                 <div class="text-secondary">${track.author}</div>
             </div>
-            <div class="time ms-auto"><img src="assets/multimedia_play.svg" alt="" class="me-3" height="30px"> - ${track.time}</div>
+            <div class="time ms-auto">
+                <div class="text-xs-center" id="example-caption-1"></div>
+                <progress class="progress" value="0" max="100" aria-describedby="example-caption-1"></progress>
+                <img src="assets/multimedia_play.svg" alt="" class="me-3" height="30px">${track.time}</div>
             <audio class="audio" src="${track.src}"></audio>
         </li>
         `;
