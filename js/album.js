@@ -41,10 +41,12 @@ if (!album) {
                 <div>${track.title}</div>
                 <div class="text-secondary">${track.author}</div>
             </div>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 25%">100%</div>
+            </div>
             <div class="time ms-auto">
-                <div class="text-xs-center" id="example-caption-1"></div>
-                <progress class="progress" value="0" max="100" aria-describedby="example-caption-1"></progress>
-                <img src="assets/multimedia_play.svg" alt="" class="me-3" height="30px">${track.time}</div>
+                <img src="assets/multimedia_play.svg" alt="" class="me-3" height="30px">${track.time}
+            </div>
             <audio class="audio" src="${track.src}"></audio>
         </li>
         `;
