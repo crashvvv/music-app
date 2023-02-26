@@ -94,7 +94,7 @@ if (!album) {
                 if (time != timeNode.innerHTML) {
                     timeNode.innerHTML = time;
                     progressNode.ariaValueMax=`${audio.duration}`;
-                    progressBarNode.style.width=`${audio.currentTime}%`; //Посчитать процент
+                    progressBarNode.style.width=`${audio.duration / 100 * audio.currentTime}%`; //Посчитать процент
                 }
                 // Нужно ли вызвать её ещё раз?
                 if (track.isPlaying) {
