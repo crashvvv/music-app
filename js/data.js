@@ -8,21 +8,21 @@ let albums = [
             {
                 title: 'You Never Can Tell',
                 author: `Chuck Berry`,
-                time: `3:42`,
+                time: `2:42`,
                 src: `music/Blues_Chuck_Berry-You_Never_Can_Tell.mp3`,
                 isPlaying: false
             },
             {
                 title: 'What A Wonderful World',
                 author: `Louis Armstrong`,
-                time: `2:58`,
+                time: `2:18`,
                 src: `music/Blues_Louis_Armstrong-What_A_Wonderful_World.mp3`,
                 isPlaying: false
             },
             {
                 title: 'Мой друг',
                 author: `Машина времени`,
-                time: `4:01`,
+                time: `4:10`,
                 src: `music/Blues_Mashina_vremeni-Mojj_drug.mp3`,
                 isPlaying: false
             },
@@ -37,21 +37,21 @@ let albums = [
             {
                 title: 'Playtime Live',
                 author: `Yanni Live`,
-                time: `время`,
+                time: `7:08`,
                 src: `music/Classic_Yanni-Playtime_Live.mp3`,
                 isPlaying: false
             },
             {
                 title: 'The Concert Event',
                 author: `Yanni Live`,
-                time: `время`,
+                time: `8:14`,
                 src: `music/Classic_Yanni-The_Concert_Event.mp3`,
                 isPlaying: false
             },
             {
                 title: 'to Imagination',
                 author: `Yanni Live`,
-                time: `Время`,
+                time: `5:22`,
                 src: `music/Classic_Yanni-to_Imagination.mp3`,
                 isPlaying: false
             },
@@ -66,21 +66,21 @@ let albums = [
             {
                 title: 'RAVE',
                 author: `Dxrk`,
-                time: `время`,
+                time: `2:49`,
                 src: `music/Electro_Dxrk-RAVE.mp3`,
                 isPlaying: false
             },
             {
                 title: 'WAKE UP',
                 author: `Moondeity`,
-                time: `время`,
+                time: `2:23`,
                 src: `music/Electro_Moondeity-WAKE_UP.mp3`,
                 isPlaying: false
             },
             {
                 title: 'KNIGHT',
                 author: `SHADXWBXRN`,
-                time: `Время`,
+                time: `2:02`,
                 src: `music/Electro_SHADXWBXRN-KNIGHT.mp3`,
                 isPlaying: false
             },
@@ -95,21 +95,21 @@ let albums = [
             {
                 title: 'Я свободен',
                 author: `Кипелов`,
-                time: `время`,
+                time: `7:13`,
                 src: `music/Metal_Kipelov-YA_svoboden.mp3`,
                 isPlaying: false
             },
             {
                 title: 'Feuer frei',
                 author: `Rammstein`,
-                time: `время`,
+                time: `3:09`,
                 src: `music/Metal_Rammstein-Feuer_frei.mp3`,
                 isPlaying: false
             },
             {
                 title: 'Ich will',
                 author: `Rammstein`,
-                time: `Время`,
+                time: `3:37`,
                 src: `music/Metal_Rammstein-Ich_will.mp3`,
                 isPlaying: false
             },
@@ -124,21 +124,21 @@ let albums = [
             {
                 title: 'Paradise',
                 author: `Meduza`,
-                time: `время`,
+                time: `2:49`,
                 src: `music/Pop_Meduza-Paradise.mp3`,
                 isPlaying: false
             },
             {
                 title: 'In The Dark',
                 author: `Purple Disco Machine`,
-                time: `время`,
+                time: `3:06`,
                 src: `music/Pop_Purple_Disco_Machine-In_The_Dark.mp3`,
                 isPlaying: false
             },
             {
                 title: 'Wont Forget You',
                 author: `Shouse`,
-                time: `Время`,
+                time: `6:39`,
                 src: `music/Pop_Shouse-Wont_Forget_You.mp3`,
                 isPlaying: false
             },

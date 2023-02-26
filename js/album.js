@@ -37,14 +37,17 @@ if (!album) {
         <li class="track list-group-item d-flex align-items-center">
             <img src="assets/play.svg" alt="" class="img-pause me-3" height="30px">
             <img src="assets/music.svg" alt="" class="img-play me-3 d-none css-selector" height="30px">
-            <div>
+            <div class="me-auto">
                 <div>${track.title}</div>
                 <div class="text-secondary">${track.author}</div>
             </div>
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 25%">100%</div>
+            <div class="progress col-6 me-3" role="progressbar" aria-label="Example with label" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 0%"></div>
             </div>
-            <div class="time ms-auto">${track.time}</div>
+            <div>
+                <img src="assets/multimedia_play.svg" alt="" height="30px">
+                <div class="time ms-auto">${track.time}</div>
+            </div>
             <audio class="audio" src="${track.src}"></audio>
         </li>
         `;
@@ -57,13 +60,15 @@ if (!album) {
             // Один элемент
             let node = trackNodes[i];
             let timeNode = node.querySelector(`.time`);
+            let progressNode = node.querySelector(`.progress`);
+            let progressBarNode = node.querySelector(`.progress-bar`);
             // Тег аудио внутри этого элемента
             let audio = node.querySelector(`.audio`);
             let track = tracks[i];
             // продолжи самостоятельно
             let imgPause = node.querySelector(`.img-pause`);
             let imgPlay = node.querySelector(`.img-play`);
-
+            
             node.addEventListener(`click`, function () {
                 // Если трек сейчас играет...
                 if (track.isPlaying) {
@@ -82,18 +87,20 @@ if (!album) {
                     updateProgress();
                 }
             });
-
+            
             function updateProgress() {
                 // Нарисовать актуальное время
                 let time = getTime(audio.currentTime);
-                if (time != getTime(audio.currentTime)) {
-                    timeNode.innerHTML = getTime(audio.currentTime);
+                if (time != timeNode.innerHTML) {
+                    timeNode.innerHTML = time;
+                    progressNode.ariaValueMax=`${audio.duration}`;
+                    progressBarNode.style.width=`${audio.currentTime}%`; //Посчитать процент
                 }
                 // Нужно ли вызвать её ещё раз?
                 if (track.isPlaying) {
                     requestAnimationFrame(updateProgress);
                 }
-              }
+            }
         }
     }
 
