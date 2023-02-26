@@ -4,13 +4,14 @@ let search = new URLSearchParams(window.location.search);
 let i = search.get(`i`);
 let album = albums[i];
 
-if (!album) {
+function renderError() {
     container.innerHTML = `Переход на главную страницу`;
     setTimeout(() => {
         window.location.pathname = `index.html`;
-    }, 5000);
-} else {
+    }, 3000);
+}
 
+function renderAlbumInfo() {
     container.innerHTML = `
     <div class="card mb-3">
         <div class="row">
@@ -27,7 +28,9 @@ if (!album) {
         </div>
     </div>
     `;
+}
 
+function renderTracks() {
     let playlist = document.querySelector(`.playlist`);
 
     let tracks = album.tracks;
@@ -52,70 +55,84 @@ if (!album) {
         </li>
         `;
     }
-    function setupAudio() {
-        // Найди коллекцию с треками
-        let trackNodes = document.querySelectorAll(`.track`); 
-        let tracks = album.tracks;
-        for (let i = 0; i < trackNodes.length; i++) { 
-            // Один элемент
-            let node = trackNodes[i];
-            let timeNode = node.querySelector(`.time`);
-            let progressNode = node.querySelector(`.progress`);
-            let progressBarNode = node.querySelector(`.progress-bar`);
-            // Тег аудио внутри этого элемента
-            let audio = node.querySelector(`.audio`);
-            let track = tracks[i];
-            // продолжи самостоятельно
-            let imgPause = node.querySelector(`.img-pause`);
-            let imgPlay = node.querySelector(`.img-play`);
-            
-            node.addEventListener(`click`, function () {
-                // Если трек сейчас играет...
-                if (track.isPlaying) {
-                    track.isPlaying = false;
-                    // Поставить на паузу
-                    audio.pause();
-                    imgPause.classList.remove(`d-none`);
-                    imgPlay.classList.add(`d-none`);
-                // Если трек сейчас не играет...
-                } else {
-                    track.isPlaying = true;
-                    // Включить проигрывание
-                    audio.play();
-                    imgPause.classList.add(`d-none`);
-                    imgPlay.classList.remove(`d-none`);
-                    updateProgress();
-                }
-            });
-            
-            function updateProgress() {
-                // Нарисовать актуальное время
-                let time = getTime(audio.currentTime);
-                if (time != timeNode.innerHTML) {
-                    timeNode.innerHTML = time;
-                    progressNode.ariaValueMax=`${audio.duration}`;
-                    progressBarNode.style.width=`${audio.duration / 100 * audio.currentTime}%`; //Посчитать процент
-                }
-                // Нужно ли вызвать её ещё раз?
-                if (track.isPlaying) {
-                    requestAnimationFrame(updateProgress);
-                }
+}
+
+function setupAudio() {
+    
+    // Найди коллекцию с треками
+    let trackNodes = document.querySelectorAll(`.track`); 
+    let tracks = album.tracks;
+    for (let i = 0; i < trackNodes.length; i++) { 
+        // Один элемент
+        let node = trackNodes[i];
+        let timeNode = node.querySelector(`.time`);
+        let progressNode = node.querySelector(`.progress`);
+        let progressBarNode = node.querySelector(`.progress-bar`);
+        // Тег аудио внутри этого элемента
+        let audio = node.querySelector(`.audio`);
+        let track = tracks[i];
+        // продолжи самостоятельно
+        let imgPause = node.querySelector(`.img-pause`);
+        let imgPlay = node.querySelector(`.img-play`);
+        
+        node.addEventListener(`click`, function () {
+            // Если трек сейчас играет...
+            if (track.isPlaying) {
+                track.isPlaying = false;
+                // Поставить на паузу
+                audio.pause();
+                imgPause.classList.remove(`d-none`);
+                imgPlay.classList.add(`d-none`);
+            // Если трек сейчас не играет...
+            } else {
+                track.isPlaying = true;
+                // Включить проигрывание
+                audio.play();
+                imgPause.classList.add(`d-none`);
+                imgPlay.classList.remove(`d-none`);
+                updateProgress();
+            }
+        });
+        
+        function updateProgress() {
+            // Нарисовать актуальное время
+            let time = getTime(audio.currentTime);
+            if (time != timeNode.innerHTML) {
+                timeNode.innerHTML = time;
+                progressNode.ariaValueMax=`${audio.duration}`;
+                progressBarNode.style.width=`${100/ (audio.duration / audio.currentTime)}%`;
+            }
+            // Нужно ли вызвать её ещё раз?
+            if (track.isPlaying) {
+                requestAnimationFrame(updateProgress);
             }
         }
     }
+}
 
-    setupAudio();
-
-    function getTime(time) {
-        let currentSeconds = Math.floor(time);
-        let minutes = Math.floor(currentSeconds / 60);
-        let seconds = Math.floor(currentSeconds % 60);
-        if (minutes < 10) {
-            minutes = `0` + minutes;
-        }
-        if (seconds < 10) {
-            seconds = `0` + seconds;
-        }
-        return `${minutes}:${seconds}`;
+function getTime(time) {
+    let currentSeconds = Math.floor(time);
+    let minutes = Math.floor(currentSeconds / 60);
+    let seconds = Math.floor(currentSeconds % 60);
+    if (minutes < 10) {
+        minutes = `0` + minutes;
     }
+    if (seconds < 10) {
+        seconds = `0` + seconds;
+    }
+    return `${minutes}:${seconds}`;
+}
+// Если альбом не найден
+if (!album) {
+    // Показать ошибку
+    renderError();
+} else {
+    // Вывод информации об альбоме
+    renderAlbumInfo();
+
+    // Вывод треков из альбома
+    renderTracks();
+
+    // Тут будет код для запуска звуков
+    setupAudio();
 }
